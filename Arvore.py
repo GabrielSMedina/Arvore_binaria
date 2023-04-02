@@ -1,5 +1,6 @@
 import tkinter as tk
 
+
 # Classes
 class Node():  # Nó que conterá o valor e as Refs
     def __init__(self, valor):
@@ -7,11 +8,12 @@ class Node():  # Nó que conterá o valor e as Refs
         self.esquerda = None
         self.direita = None
 
+
 class Arvore():  # Estrutura da arvore
     def __init__(self):
         self.raiz = None
-        #self.raiz = Node(10)
 
+    # Função publica para insercao de valores na arvore
     def inserir(self, valor):
         if self.raiz:
             self._inserir(valor, self.raiz)
@@ -30,10 +32,10 @@ class Arvore():  # Estrutura da arvore
             else:
                 self._inserir(valor, node.direita)
 
-
+    # Impressao dos dados contidos na arvore e sua profundidade
     def imprime_arvore(self):
         if self.raiz.valor:
-            valores = [(1 ,self.raiz.valor)]
+            valores = [(1, self.raiz.valor)]
             if self.raiz.esquerda or self.raiz.direita:
                 self._layer(self.raiz, 2, valores)
             print(valores)
@@ -44,13 +46,21 @@ class Arvore():  # Estrutura da arvore
 
         if node.esquerda:
             lista.append((profundidade, node.esquerda.valor))
-            self._layer(node.esquerda ,profundidade+1, lista)
+            self._layer(node.esquerda, profundidade + 1, lista)
         if node.direita:
             lista.append((profundidade, node.direita.valor))
             self._layer(node.direita, profundidade + 1, lista)
 
+    # Deletar elemento da arvore
+    def deletar(self):  # Pendente
+        pass
 
-# Execucao
+    # Busca de elemento
+    def busca(self):  # Pendente
+        pass
+
+
+# Testes
 def teste():
     arvore = Arvore()
     arvore.inserir(5)
@@ -61,8 +71,9 @@ def teste():
     arvore.inserir(7)
     arvore.inserir(9)
     arvore.inserir(58)
-
-
     arvore.imprime_arvore()
+
+
+# Execucao
 
 teste()
