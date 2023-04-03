@@ -10,7 +10,7 @@ Uma árvore binária é uma estrutura de dados. Ela consiste em um nó inicial q
 Abaixo, podemos visualizar como essa estrutura pode se formar:
 
 
-![alt text](https://github.com/GabrielSMedina/Arvore_binaria/blob/main/Imagens/Arvore_binaria.jpg?raw=true)
+![alt text](https://github.com/GabrielSMedina/Arvore_binaria/blob/main/Imagens/arvore_binaria.jpg?raw=true)
 
 Como é possível notar, um nó pode se dividir em até dois filhos, como visto anteriormente. Com base nisso, o algoritmo criado neste projeto usou o seguinte princípio para organizar a árvore: valores menores irão sempre para a esquerda e valores maiores sempre irão para a direita.
 
@@ -18,7 +18,7 @@ Suponhamos que vamos inserir os seguintes valores nessa ordem: 5, 3, 8, 1, 4, 6,
 
 
 
-![alt text](https://github.com/GabrielSMedina/Arvore_binaria/blob/main/Imagens/Arvore_preenchida.jpg?raw=true)
+![alt text](https://github.com/GabrielSMedina/Arvore_binaria/blob/main/Imagens/arvore_preenchida.jpg?raw=true)
 
 Nossa árvore ficará preenchida desta maneira, segundo o algoritmo escrito neste projeto.
 
